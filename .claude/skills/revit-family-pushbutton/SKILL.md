@@ -473,11 +473,11 @@ else:
 ## Iteration workflow
 
 1. Edit `script.py` (VS Code with `gtalarico/ironpython-stubs` for autocomplete).
-2. In Revit, open the appropriate `.rft` template — make sure it's the active document.
+2. Remind user that they should go to Revit, open the appropriate `.rft` template — make sure it's the active document.
 3. Click the pushbutton. Output appears in pyRevit's output window.
 4. If it errored: read the traceback, fix, click again. **No reload needed for script edits.**
 5. If it succeeded: visually verify in **3D View** first (plan view will often look empty even on success because geometry is on a vertical plane and edge-on in plan). Then check **Elevations** and **Plan**.
-6. **File → Save As → Family → `name.rfa`** to persist.
+6. Remind user to **File → Save As → Family → `name.rfa`** to persist.
 7. To test in a project: open or create a project doc, drag the `.rfa` into the view, or use **Insert → Load Family**.
 
 ## Saving the family programmatically
